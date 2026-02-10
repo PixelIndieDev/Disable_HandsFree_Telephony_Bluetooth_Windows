@@ -14,7 +14,7 @@ My method I have not seen that much on the ethernet, so I made a [Reddit post](h
 
 ------------------------------
 
-## Experimental Method: Actual Permanent Hands-Free Telephony Disable
+## Experimental Method: Actual permanent Hands-Free Telephony disabling
 This method prevents Windows Update from automatically re-enabling Hands-Free Telephony by restricting the SYSTEM account's ability to modify the specific registry's.
 
 > [!CAUTION]
