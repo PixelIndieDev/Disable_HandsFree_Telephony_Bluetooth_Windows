@@ -37,6 +37,9 @@ Now we will do the same for BthHFAud
 12. Uncheck **Full Control** (only **Read** should remain checked).
 13. Click OK -> Apply -> OK.
 
+### What this does:
+This prevents the SYSTEM account to be able to set values in those two specific folders.
+
 ------------------------------
 
 The `.reg` file uses the solution that I posted [on Reddit](https://www.reddit.com/user/VibrantPixelDev/comments/1m96ivg/how_to_permanently_disable_handsfree_telephony_on/)
