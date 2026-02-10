@@ -40,5 +40,3 @@ Now we will do the same for BthHFAud
 ------------------------------
 
 The `.reg` file uses the solution that I posted [on Reddit](https://www.reddit.com/user/VibrantPixelDev/comments/1m96ivg/how_to_permanently_disable_handsfree_telephony_on/)
-By switching the SYSTEM account to "Read-Only," Windows Update loses the "Full Control" permission required to toggle these drivers back on during a system update.
-
