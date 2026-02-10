@@ -12,4 +12,33 @@ My method I have not seen that much on the ethernet, so I made a [Reddit post](h
 2. **Double-click the file** to apply the changes to your Windows Registry
 3. **Reboot your pc**
 
+------------------------------
+
+## Experimental Method: Actual Permanent Hands-Free Telephony Disable
+This method prevents Windows Update from automatically re-enabling Hands-Free Telephony by restricting the SYSTEM account's ability to modify the specific registry's.
+
+> [!CAUTION]
+> This technique is in testing. While I have found no issues, modifying registry permissions can have unexpected side effects. Proceed with caution. If you find any issues, check the Full Control for the SYSTEM account to restore the permission and please report the issue to this Github.
+
+1. Press Win + R, type regedit, and press Enter
+2. Navigate to *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFEnum*
+3. Right-click the **BthHFEnum folder** -> Permissions -> Advanced.
+4. Click Disable inheritance and choose "Convert inherited permissions into explicit permissions on this object."
+5. Select **SYSTEM** from the list and click Edit.
+6. Uncheck **Full Control** (only **Read** should remain checked).
+7. Click OK -> Apply -> OK.
+
+Now we will do the same for BthHFAud
+
+8. Navigate to *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFAud*
+9. Right-click the **BthHFAud folder** -> Permissions -> Advanced.
+10. Click Disable inheritance and choose "Convert inherited permissions into explicit permissions on this object."
+11. Select **SYSTEM** from the list and click Edit.
+12. Uncheck **Full Control** (only **Read** should remain checked).
+13. Click OK -> Apply -> OK.
+
+------------------------------
+
 The `.reg` file uses the solution that I posted [on Reddit](https://www.reddit.com/user/VibrantPixelDev/comments/1m96ivg/how_to_permanently_disable_handsfree_telephony_on/)
+By switching the SYSTEM account to "Read-Only," Windows Update loses the "Full Control" permission required to toggle these drivers back on during a system update.
+
