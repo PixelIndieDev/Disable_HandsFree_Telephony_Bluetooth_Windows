@@ -10,7 +10,7 @@ My method I have not seen that much on the ethernet, so I made a [Reddit post](h
 ## Installation / Usage
 1. **Download the `.reg` file** from this repository
 2. **Double-click the file** to apply the changes to your Windows Registry
-3. **Reboot your pc**
+3. **Reboot your pc or turn on and off Bluetooth**
 
 ------------------------------
 
