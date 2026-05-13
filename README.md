@@ -14,31 +14,35 @@ My method I have not seen that much on the ethernet, so I made a [Reddit post](h
 
 ------------------------------
 
-## Experimental Method: Actual permanent Hands-Free Telephony disabling
-This method prevents Windows Update from automatically re-enabling Hands-Free Telephony by restricting the SYSTEM account's ability to modify the specific registry's.
+## ~~Experimental Method: Actual permanent Hands-Free Telephony disabling~~
 
-> [!CAUTION]
-> This technique is in testing. While I have found no issues, modifying registry permissions can have unexpected side effects. Proceed with caution. If you find any issues, check the Full Control for the SYSTEM account to restore the permission and please report the issue to this Github.
+> [!IMPORTANT]
+> The experimental method still has the issue of getting overriden by Windows updates
 
-1. Press Win + R, type regedit, and press Enter
+~~This method prevents Windows Update from automatically re-enabling Hands-Free Telephony by restricting the SYSTEM account's ability to modify the specific registry's.~~
+
+> ~~[!CAUTION]~~
+> ~~This technique is in testing. While I have found no issues, modifying registry permissions can have unexpected side effects. Proceed with caution. If you find any issues, check the Full Control for the SYSTEM account to restore the permission and please report the issue to this Github.~~
+
+~~1. Press Win + R, type regedit, and press Enter
 2. Navigate to *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFEnum*
 3. Right-click the **BthHFEnum folder** -> Permissions -> Advanced.
 4. Click Disable inheritance and choose "Convert inherited permissions into explicit permissions on this object."
 5. Select **SYSTEM** from the list and click Edit.
 6. Uncheck **Full Control** (only **Read** should remain checked).
-7. Click OK -> Apply -> OK.
+7. Click OK -> Apply -> OK.~~
 
-Now we will do the same for BthHFAud
+~~Now we will do the same for BthHFAud~~
 
-8. Navigate to *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFAud*
+~~8. Navigate to *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\BthHFAud*
 9. Right-click the **BthHFAud folder** -> Permissions -> Advanced.
 10. Click Disable inheritance and choose "Convert inherited permissions into explicit permissions on this object."
 11. Select **SYSTEM** from the list and click Edit.
 12. Uncheck **Full Control** (only **Read** should remain checked).
-13. Click OK -> Apply -> OK.
+13. Click OK -> Apply -> OK.~~
 
-### What this does:
-This prevents the SYSTEM account to be able to set values in those two specific folders.
+### ~~What this does:~~
+~~This prevents the SYSTEM account to be able to set values in those two specific folders.~~
 
 ------------------------------
 
