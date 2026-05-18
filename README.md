@@ -15,23 +15,22 @@ This method installs a Windows Scheduled Task that automatically re-applies the 
 > [!IMPORTANT]
 > The script must be run as Administrator
 
-1. **Download the `ScheduledTask-DisableHands-FreeTelephony.bat` file** from this repository
+1. **Download the [ScheduledTask-DisableHands-FreeTelephony.bat](https://github.com/PixelIndieDev/Disable_HandsFree_Telephony_Bluetooth_Windows/releases/download/V2/ScheduledTask-DisableHands-FreeTelephony.bat) file** from this repository
 2. **Right click the file** and run as administrator
 3. **Wait** for it to finish
 4. **Reboot your pc or turn on and off Bluetooth**
 
 ### Uninstall
-1. **Download the `ScheduledTask-Removal-DisableHands-FreeTelephony.bat` file** from this repository
+1. **Download the [ScheduledTask-Removal-DisableHands-FreeTelephony.bat](https://github.com/PixelIndieDev/Disable_HandsFree_Telephony_Bluetooth_Windows/releases/download/V2/ScheduledTask-Removal-DisableHands-FreeTelephony.bat) file** from this repository
 2. **Right click the file** and run as administrator
 3. **Wait** for it to finish
 4. **The task and its files are now deleted**
 
 ### Manual
 #### Installation / Usage
-1. **Download the `.reg` file** from this repository
+1. **Download the [DisableHands-FreeTelephonyBluetooth.reg](https://github.com/PixelIndieDev/Disable_HandsFree_Telephony_Bluetooth_Windows/releases/download/V2/DisableHands-FreeTelephonyBluetooth.reg) file** from this repository
 2. **Double-click the file** to apply the changes to your Windows Registry
 3. **Reboot your pc or turn on and off Bluetooth**
-
 
 ------------------------------
 
