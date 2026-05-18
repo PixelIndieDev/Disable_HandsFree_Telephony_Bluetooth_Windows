@@ -15,6 +15,13 @@ This method installs a Windows Scheduled Task that automatically re-applies the 
 > [!IMPORTANT]
 > The script must be run as Administrator
 
+> [!CAUTION]
+> Your antivirus or Windows Defender may flag this script as suspicious. This is a **false positive**.
+>
+> Antiviruss naturally cautions against batch files downloaded from the internet that automate system changes (such as creating scheduled tasks).
+> 
+> **If you still have some doubts**, the code is fully open-source, meaning everyone can see the exact code that executes. You can also open the file in a text editor as this will also show the exact code used.
+
 1. **Download the [ScheduledTask-DisableHands-FreeTelephony.bat](https://github.com/PixelIndieDev/Disable_HandsFree_Telephony_Bluetooth_Windows/releases/download/V2/ScheduledTask-DisableHands-FreeTelephony.bat) file** from this repository
 2. **Right click the file** and run as administrator
 3. **Wait** for it to finish
