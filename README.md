@@ -1,6 +1,6 @@
 # How to Permanently Disable Hands-Free Telephony on Bluetooth Headphones in Windows 10 / Windows 11
 
-![Registry](https://img.shields.io/badge/File-.reg-orange)
+![Registry](https://img.shields.io/badge/File-.reg-green) ![BatchFile](https://img.shields.io/badge/File-.bat-blue)
 
 If you're using Bluetooth headphones like the Sony WH-1000XM5, WH-1000XM4, or similar, and you're frustrated with Windows 10/11 constantly enabling "Hands-Free Telephony", here's a permanent fix.
 Even if you disable Hands-Free Telephony in the Sound Control Panel, it often turns itself back on after reboots, updating or re-pairing. So that's not a working solution.
